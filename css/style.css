@@ -132,202 +132,218 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-.team-social {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.team-social .social-link {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f8f9fa;
-    color: var(--primary-color);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.team-social .social-link:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: translateY(-3px);
-}
-
-/* Contact Section */
-.contact-info i {
-    color: var(--primary-color);
-    margin-right: 10px;
-}
-
-/* Footer Styles */
-.footer-section {
-    background: #1a1a1a;
-    color: #fff;
+/* Leadership Team Section */
+.team-section {
     position: relative;
+    overflow: hidden;
+    padding: 60px 0;
+    background: linear-gradient(135deg, rgba(242, 146, 34, 0.05) 0%, rgba(242, 146, 34, 0.1) 100%);
+    text-align: center;
 }
 
-.footer-content {
-    padding: 40px 0;
+.team-section .container {
+    max-width: 1200px;
 }
 
-.footer-logo {
-    height: 50px;
-    margin-bottom: 20px;
-    filter: brightness(0) invert(1);
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
-}
-
-.footer-logo:hover {
-    opacity: 1;
-}
-
-.footer-text {
-    color: #b3b3b3;
-    line-height: 1.8;
-    margin-bottom: 30px;
-}
-
-.social-links a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: #fff;
-    margin-right: 10px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-    background: var(--primary-color);
-    transform: translateY(-3px);
-}
-
-.footer-links h4, .footer-contact h4 {
-    color: #fff;
-    font-size: 1.2rem;
-    margin-bottom: 25px;
+.team-section h2 {
+    font-size: 2.5rem;
+    margin: 0 auto 3rem;
     position: relative;
-    padding-bottom: 10px;
+    display: inline-block;
+    padding-bottom: 15px;
+    text-align: center;
 }
 
-.footer-links h4:after, .footer-contact h4:after {
+.team-section h2:after {
     content: '';
     position: absolute;
-    left: 0;
     bottom: 0;
-    width: 30px;
-    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
     background: var(--primary-color);
 }
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.team-card {
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    margin: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-links ul li {
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(242, 146, 34, 0.2);
+}
+
+.team-image-wrapper {
+    position: relative;
+    padding-top: 75%;
+    overflow: hidden;
+    background: linear-gradient(45deg, #f29222, #ff6b6b);
+}
+
+.team-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.team-card:hover .team-image {
+    transform: scale(1.1);
+}
+
+.team-content {
+    position: relative;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.team-name {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.team-position {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
     margin-bottom: 15px;
+    opacity: 0.9;
 }
 
-.footer-links ul li a {
-    color: #b3b3b3;
-    text-decoration: none;
+.team-bio {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.team-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 0 8px;
+}
+
+.stat-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+/* Highlights Section */
+.highlights-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.highlight-card {
+    padding: 30px 20px;
+    margin: 15px 0;
+    background: white;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(242, 146, 34, 0.15);
+}
+
+.highlight-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background: rgba(242, 146, 34, 0.1);
+    margin: 0 auto 20px;
     transition: all 0.3s ease;
 }
 
-.footer-links ul li a:hover {
-    color: var(--primary-color);
-    padding-left: 5px;
+.highlight-card:hover .highlight-icon {
+    background: var(--primary-color);
+    color: white;
+    transform: rotateY(360deg);
 }
 
-.footer-contact p {
-    color: #b3b3b3;
-    margin-bottom: 15px;
+.highlight-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, var(--primary-color), #ff6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.footer-contact p i {
-    color: var(--primary-color);
-    margin-right: 10px;
-    width: 20px;
-}
-
-.footer-bottom {
-    background: #111;
-    padding: 20px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-bottom-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.copyright p {
+.highlight-text {
+    font-size: 1.1rem;
+    color: #666;
     margin: 0;
-    color: #b3b3b3;
 }
 
-.footer-bottom-links a {
-    color: #b3b3b3;
-    text-decoration: none;
-    margin-left: 20px;
-    transition: color 0.3s ease;
-}
-
-.footer-bottom-links a:hover {
-    color: var(--primary-color);
+@media (max-width: 991px) {
+    .highlight-card {
+        padding: 25px 15px;
+    }
+    
+    .highlight-number {
+        font-size: 1.8rem;
+    }
+    
+    .highlight-text {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
-    .footer-bottom-content {
-        flex-direction: column;
-        text-align: center;
+    .team-section h2 {
+        font-size: 2rem;
     }
     
-    .footer-bottom-links {
-        margin-top: 15px;
+    .team-card {
+        margin: 15px 0;
     }
     
-    .footer-bottom-links a {
-        margin: 0 10px;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero .lead {
-        font-size: 1.2rem;
-    }
-    
-    section {
-        padding: 25px 0;
-    }
-    
-    .py-4, .py-5 {
-        padding-top: 1.5rem !important;
-        padding-bottom: 1.5rem !important;
-    }
-    
-    .market-wrapper {
-        padding: 1rem;
-    }
-    
-    .growth-chart {
-        height: 180px;
+    .highlight-card {
+        margin: 10px 0;
     }
 }
 
@@ -1585,7 +1601,7 @@ h2 {
 .social-icon:hover {
     background: var(--primary-color);
     color: white;
-    transform: translateY(-5px) !important;
+    transform: translateY(-5px);
 }
 
 .member-info {
@@ -1649,4 +1665,160 @@ h2 {
     .member-info h4 {
         font-size: 1.3rem;
     }
-} 
+}
+
+/* Download App Section Styles */
+.download-wrapper {
+    position: relative;
+    padding: 40px 0;
+}
+
+.phone-mockup {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+.phone-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: floatPhone 6s ease-in-out infinite;
+}
+
+.phone-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.app-interface {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.app-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: pulseIcon 2s ease-in-out infinite;
+}
+
+.feature-dot {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 0.6;
+}
+
+.feature-dots {
+    display: flex;
+    gap: 10px;
+    animation: slideDots 3s linear infinite;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.store-button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.store-button:hover {
+    transform: translateY(-5px);
+}
+
+.store-button i {
+    font-size: 24px;
+}
+
+@keyframes floatPhone {
+    0%, 100% {
+        transform: translateY(0) rotateY(0);
+    }
+    25% {
+        transform: translateY(-20px) rotateY(5deg);
+    }
+    75% {
+        transform: translateY(20px) rotateY(-5deg);
+    }
+}
+
+@keyframes pulseIcon {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes slideDots {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .phone-mockup {
+        width: 250px;
+        height: 500px;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+    }
+}
