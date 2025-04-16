@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="900" viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+    <!-- India Map Outline - More detailed version -->
+    <path d="M400,50 
+        /* Kashmir and Northern Region */
+        C420,60 440,70 460,85
+        C480,100 490,120 495,140
+        /* Northeast Region */
+        C500,160 510,180 530,190
+        C550,200 570,210 590,220
+        /* Eastern Curve */
+        C600,240 605,260 608,280
+        C610,300 612,320 615,340
+        /* Central East Coast */
+        C617,380 615,420 612,460
+        C610,500 608,540 605,580
+        /* Southern Peninsula */
+        C600,620 590,660 575,700
+        C560,740 540,770 510,790
+        C480,810 450,820 420,825
+        C390,830 360,828 330,820
+        /* Western Coast upward */
+        C300,810 280,790 265,760
+        C250,730 240,700 235,670
+        C230,640 228,610 225,580
+        /* Gujarat Region */
+        C220,550 215,520 205,490
+        C195,460 180,440 165,420
+        /* Western Border */
+        C160,390 158,360 160,330
+        C162,300 165,270 170,240
+        /* Northern Region */
+        C180,210 200,180 225,160
+        C250,140 280,120 310,105
+        C340,90 370,70 400,50
+        Z" 
+        fill="#f5f5f5" 
+        stroke="#333" 
+        stroke-width="2"/>
+
+    <!-- State Boundaries - Simplified -->
+    <path d="M300,200 C320,220 340,240 360,260" fill="none" stroke="#ddd" stroke-width="1"/>
+    <path d="M250,300 C280,310 310,320 340,330" fill="none" stroke="#ddd" stroke-width="1"/>
+    <path d="M200,400 C240,410 280,420 320,430" fill="none" stroke="#ddd" stroke-width="1"/>
+    <path d="M300,500 C330,510 360,520 390,530" fill="none" stroke="#ddd" stroke-width="1"/>
+    
+    <!-- Major Cities -->
+    <circle cx="320" cy="280" r="6" fill="#F29222" class="delhi-point"/> <!-- Delhi -->
+    <circle cx="280" cy="320" r="6" fill="#F29222" class="jaipur-point"/> <!-- Jaipur -->
+    <circle cx="340" cy="260" r="6" fill="#F29222" class="haryana-point"/> <!-- Haryana -->
+    
+    <!-- City Labels -->
+    <text x="330" y="275" font-size="12" fill="#333" font-weight="bold">Delhi</text>
+    <text x="290" y="315" font-size="12" fill="#333" font-weight="bold">Jaipur</text>
+    <text x="350" y="255" font-size="12" fill="#333" font-weight="bold">Haryana</text>
+
+    <!-- Water Bodies -->
+    <path d="M600,200 C610,210 620,220 630,230" fill="none" stroke="#99c2ff" stroke-width="2"/>
+    <path d="M200,600 C220,610 240,620 260,630" fill="none" stroke="#99c2ff" stroke-width="2"/>
+</svg>

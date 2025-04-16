@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="900" viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+    <!-- India Map Outline -->
+    <path d="M400,100 
+        Q450,120 500,150 
+        Q600,200 650,300
+        Q700,400 720,500
+        Q730,600 700,650
+        Q650,700 600,750
+        Q500,800 400,820
+        Q300,830 250,800
+        Q200,750 150,700
+        Q100,600 80,500
+        Q70,400 100,300
+        Q150,200 200,150
+        Q300,120 400,100
+        Z" 
+        fill="#f5f5f5" 
+        stroke="#333" 
+        stroke-width="2"/>
+    
+    <!-- Kashmir Region -->
+    <path d="M400,100 
+        Q450,120 500,150
+        L450,180 
+        Q400,150 350,180
+        L300,150
+        Q350,120 400,100
+        Z"
+        fill="#f5f5f5" 
+        stroke="#333" 
+        stroke-width="2"/>
+
+    <!-- Gujarat Peninsula -->
+    <path d="M150,500
+        Q100,550 80,600
+        L120,580
+        Q150,550 170,580
+        L150,500
+        Z"
+        fill="#f5f5f5" 
+        stroke="#333" 
+        stroke-width="2"/>
+
+    <!-- South India Peninsula -->
+    <path d="M400,700
+        Q450,750 400,800
+        Q350,750 400,700
+        Z"
+        fill="#f5f5f5" 
+        stroke="#333" 
+        stroke-width="2"/>
+
+    <!-- City Markers -->
+    <circle cx="400" cy="300" r="8" fill="#F29222" class="delhi-point"/> <!-- Delhi -->
+    <circle cx="350" cy="350" r="8" fill="#F29222" class="jaipur-point"/> <!-- Jaipur -->
+    <circle cx="420" cy="280" r="8" fill="#F29222" class="haryana-point"/> <!-- Haryana -->
+    
+    <!-- City Labels -->
+    <text x="410" y="290" font-size="14" fill="#333">Delhi</text>
+    <text x="360" y="340" font-size="14" fill="#333">Jaipur</text>
+    <text x="430" y="270" font-size="14" fill="#333">Haryana</text>
+</svg>
